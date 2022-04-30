@@ -19,7 +19,11 @@ router.get('/dashboard', ensureAuthenticated, (req, res) =>
 res.render('dashboard', {
      name: req.user.name,
      email: req.user.email,
-     id: req.user.id
+     phone: req.user.phone,
+     id: req.user.id,
+     technicianType: req.user.technicianType,
+     skill: req.user.skill,
+     qualification: req.user.qualification
 }));
 router.get('/edit', ensureAuthenticated, (req, res) => 
 res.render('edit',{

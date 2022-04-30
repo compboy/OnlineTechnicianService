@@ -86,7 +86,10 @@ app.get('/technician',(req, res)=>{
     res.render('technician')
 })
 app.get('/edit',(req, res)=>{
-res.render('edit');
+        res.render('edit');
+})
+app.get('/location',(req, res)=>{
+    res.render('location');
 })
 
 //showing all technicians 
@@ -130,11 +133,11 @@ app.get('/edit',ensureAuthenticated, async(req, res)=>{
 app.post('/edit', async (req,res)=>{
    try{
     if(req.file){
-        const userData = await User.findByIdAndUpdate({ _id: req.body.user_id},{$set:{name:req.body.name, 
+        const userData = await User.findByIdAndUpdate({ _id: req.body.user_id},{$set:{name:req.body.name, phone:req.body.phone,
             skill: req.body.skill}});
 
     }else {
-        const userData = await User.findByIdAndUpdate({ _id: req.body.user_id},{$set:{name:req.body.name, 
+        const userData = await User.findByIdAndUpdate({ _id: req.body.user_id},{$set:{name:req.body.name, phone:req.body.phone,
         skill: req.body.skill}});
     }
     res.redirect('/dashboard');

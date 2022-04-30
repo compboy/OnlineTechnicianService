@@ -1,14 +1,23 @@
+h1{
+  color: aliceblue;
+}
 h2{
 color: rgb(255, 255, 255);
 text-transform: capitalize;
-text-align: center;
+text-align: left;
 top: 50%;
-opacity: 1;
+font-size: 36px;
+line-height: 40px;
 }
 h5{
   color: rgb(255, 255, 255);
+  font-weight: bold;
 }
 p{
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+h4{
   color: rgb(255, 255, 255);
 }
 
@@ -22,15 +31,22 @@ body{
   background-image: url("/img/img3.jpg");
   background-size: cover;
 }
-/* .text-box{
+.text-box{
   color: rgb(199, 174, 174);
   width: 80%;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50);
   text-align: center;
+  
 
-} */
+} 
+.text-box h3{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  
+
+} 
 
 td{
   color: rgb(255, 255, 255);

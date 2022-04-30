@@ -8,26 +8,26 @@
   <title>Home page</title>
 </head>
 <body>
-<!--   <div class="img-box">
-    <img class="img-box" src="/img/img1.jpg" alt="">
-  </div> -->
-
+ <br> 
  <div class ="text-box">
-   <h2>First ever in Bangladsh</h2>
-   <p> We are here for your problems and provide the
-    best and definitely economical technicia support. </p>
+   <h1>Welcome to KAAJ.COM</h1>
+   <h3>First ever in Bangladsh</h3>
+   <h3> We are here for your problems and provide the
+    best and definitely economical technicia support. </h3>
  </div>
- 
+ <br>
   <div class="text-job">
-        <% for(var i=jobList.length - 1; i >= 0; i-- ){ %>
-          
+      <h2>Available jobs</h2>
+        <% for(var i=jobList.length - 1; i >=7; i-- ){ %>
           <h5> Name: <%= jobList[i].name %></h5>
           <p> Phone: <%= jobList[i].phone %></p>
           <p> Device Type: <%= jobList[i].deviceType %></>
           <p>Device: <%= jobList[i].device %></p>
           <p>Problem: <%= jobList[i].problem %></p>
           <p>Location: <%= jobList[i].location %></p>
-          <br>
+
+            <br>
+          
           <% } %>
         </div>
 </body>
