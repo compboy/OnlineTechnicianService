@@ -49,11 +49,11 @@ router.post('/addJob', (req,res)=>{
 //Register Handle
 router.post('/register', (req,res)=>{
     console.log(req.body)
-    const {name, email, phone, skill, password, password2} = req.body; 
+    const {name, email, phone,technicianType, skill,qualification, password, password2} = req.body; 
     let errors = [];
 
     //check reqruied fields 
-    if(!name || !email || !password || !password2 || !phone || !skill){
+    if(!name || !email || !password || !password2 || !phone || !skill || !technicianType || !qualification){
         //console.log('Please fiill in the all fields.');
         errors.push({ msg: 'Please fill in the all fields'});
     }
@@ -74,7 +74,9 @@ router.post('/register', (req,res)=>{
             name,
             email,
             phone,
+            technicianType,
             skill,
+            qualification,
             password,
             password2
         });  
@@ -90,7 +92,9 @@ router.post('/register', (req,res)=>{
                 name,
                 email,
                 phone,
+                technicianType,
                 skill,
+                qualification,
                 password,
                 password2
                 });
@@ -99,7 +103,9 @@ router.post('/register', (req,res)=>{
                     name,
                     email,
                     phone,
+                    technicianType,
                     skill,
+                    qualification,
                     password
                 });
                 //Hash Password

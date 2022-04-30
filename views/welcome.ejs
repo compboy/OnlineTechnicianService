@@ -4,20 +4,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  
   <title>Home page</title>
 </head>
 <body>
-  <div class =" div title01">
-    <br>
-    <h2><i class="fab">WELCOME TO KAAJ.COM </i></h2>
-  </div>
-  <br>
+<!--   <div class="img-box">
+    <img class="img-box" src="/img/img1.jpg" alt="">
+  </div> -->
+
+ <div class ="text-box">
+   <h2>First ever in Bangladsh</h2>
+   <p> We are here for your problems and provide the
+    best and definitely economical technicia support. </p>
+ </div>
  
- 
-  <div>
+  <div class="text-job">
         <% for(var i=jobList.length - 1; i >= 0; i-- ){ %>
           
-          <p> Name: <%= jobList[i].name %></p>
+          <h5> Name: <%= jobList[i].name %></h5>
           <p> Phone: <%= jobList[i].phone %></p>
           <p> Device Type: <%= jobList[i].deviceType %></>
           <p>Device: <%= jobList[i].device %></p>

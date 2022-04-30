@@ -13,16 +13,23 @@ const UserSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    technicianType: {
+        type: String,
+        required: true
+    },
+    skill: {
+        type: String,
+        required: true
+    },
+    qualification: {
+        type: String,
+        required: true
+    },
     password: {
         type: String,
         required: true
     },
     // user skills
-   
-    skill: {
-        type: String,
-        required: true
-    },
     /*expertize: {
         type: String,
         required: true */

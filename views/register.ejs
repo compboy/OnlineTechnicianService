@@ -16,8 +16,6 @@
               value="<%= typeof name != 'undefined' ? name : '' %>"
             />
           </div>
-          
-
 
           <div class="form-group">
             <label for="email">Email</label>
@@ -45,6 +43,18 @@
           </div>
 
           <div class="form-group">
+            <label for="technicianType">Type of Technician</label>
+            <input
+              type="technicianType"
+              id="technicianType"
+              name="technicianType"
+              class="form-control"
+              placeholder="i.e. Computer,Electrician, Airconditionar......"
+              value="<%= typeof technicianType != 'undefined' ? technicianType : '' %>"
+            />
+          </div>
+
+          <div class="form-group">
             <label for="skill">Skills</label>
             <input
               type="skill"
@@ -53,6 +63,17 @@
               class="form-control"
               placeholder="Mention Skill"
               value="<%= typeof skill != 'undefined' ? skill : '' %>"
+            />
+          </div>
+          <div class="form-group">
+            <label for="qualification">Qualifications</label>
+            <input
+              type="qualification"
+              id="qualification"
+              name="qualification"
+              class="form-control"
+              placeholder="i.e. BSc, Diplopa, or Traning center......."
+              value="<%= typeof qualification != 'undefined' ? qualification : '' %>"
             />
           </div>
 

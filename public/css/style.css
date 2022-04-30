@@ -1,15 +1,54 @@
+h2{
+color: rgb(255, 255, 255);
+text-transform: capitalize;
+text-align: center;
+top: 50%;
+opacity: 1;
+}
+h5{
+  color: rgb(255, 255, 255);
+}
+p{
+  color: rgb(255, 255, 255);
+}
+
 .job{
 background-color: rgb(190, 190, 190)
 }
 body{
-  background-color: rgb(255, 255, 255);  
+  background-color: rgb(166, 190, 226); 
+  width: 100%;
+  position: relative;
+  background-image: url("/img/img3.jpg");
+  background-size: cover;
 }
+/* .text-box{
+  color: rgb(199, 174, 174);
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50);
+  text-align: center;
+
+} */
+
 td{
-  color: blue;
+  color: rgb(255, 255, 255);
 }
-h2{
-  color: rgb(69, 148, 240);
+.navbar{
+  min-width: 100%;
+  min-height: 80px;
 }
-div{
-  color: blanchedalmond;
+
+.navbar-toggle {
+  /* (80px - button height 34px) / 2 = 23px */
+  margin-top: 23px;
+  padding: 9px 10px !important;
+}
+.navbar {
+  background-color: transparent !important;
+}
+
+thead{
+  color: aliceblue;
 }

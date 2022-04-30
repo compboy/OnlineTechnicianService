@@ -38,6 +38,7 @@ app.use(expressLayouts);
 app.set('view engine','ejs','jade');
 app.set('views', path.join(__dirname,'views'));
 app.use('/css',express.static(__dirname  + '/public/css'))
+app.use('/img',express.static(__dirname  + '/public/img'))
 
 //Bodyparser
 app.use(express.urlencoded({ extended: false}));
