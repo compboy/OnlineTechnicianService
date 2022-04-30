@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+   <div> 
+    <% technicianList.forEach(user => { %>
+      <!--  <a href="/technician"><h5> <%= user.id %> </h5></a>  -->
+       <p>Name:  <%= user.name %></p> 
+       <p>Email: <%= user.email %> </p>
+       <p>Skill: <%= user.skill %> </p>
+       <p>Phone: <%= user.phone %> </p>
+       <br>
+       <br>
+    <% }) %>
+</body>
+</html>
