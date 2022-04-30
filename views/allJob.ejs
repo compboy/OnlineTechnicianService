@@ -7,14 +7,32 @@
 </head>
 <body>
     <br>
-   <div> 
-    <% jobList.forEach(user => { %>
-       <p>Name:  <%= user.name %></p> 
-       <p>Device: <%= user.device %> </p>
-       <p>Problem: <%= user.problem %> </p>
-       <p>Location: <%= user.location %> </p>
-       <br>
-       <br>
-    <% }) %>
+
+    <table class="table jobTable">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Device Type</th>
+            <th scope="col">Device</th>
+            <th scope="col">Problem</th>
+            <th scope="col">Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <% for(var i=0; i < jobList.length; i++ ){ %>
+              <tr></tr>
+              <td> <%= jobList[i].name %></td>
+              <td> <%= jobList[i].phone %></td>
+              <td> <%= jobList[i].deviceType %></td>
+              <td> <%= jobList[i].device %></td>
+              <td> <%= jobList[i].problem %></td>
+              <td> <%= jobList[i].location %></td>
+            </tr>
+              <% } %>
+        
+        </tbody>
+      </table>
 </body>
 </html>

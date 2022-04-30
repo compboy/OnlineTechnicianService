@@ -6,6 +6,14 @@ const jobSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    phone: {
+        type: String,
+        required: true
+    },
+    deviceType: {
+        type: String,
+        required: true
+    },
     device: {
         type: String,
         required: true

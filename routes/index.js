@@ -11,8 +11,8 @@ router.get('/',(req,res)=>{
       res.render('welcome',{
          jobList: jobs
       })
-     })
  })
+})
  
 //dashboard
 router.get('/dashboard', ensureAuthenticated, (req, res) => 

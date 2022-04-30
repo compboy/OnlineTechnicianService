@@ -37,6 +37,7 @@ mongoose.connect(db,{useNewUrlParser: true})
 app.use(expressLayouts);
 app.set('view engine','ejs','jade');
 app.set('views', path.join(__dirname,'views'));
+app.use('/css',express.static(__dirname  + '/public/css'))
 
 //Bodyparser
 app.use(express.urlencoded({ extended: false}));
@@ -98,7 +99,7 @@ app.get('/allTechnician',(req,res)=>{
 
 //Showing all jobs
 app.get('/allJob',(req,res)=>{
-    User.find({}, function(err,jobs){
+    Job.find({}, function(err,jobs){
      res.render('allJob',{
         jobList: jobs
      })
@@ -108,19 +109,7 @@ app.get('/allJob',(req,res)=>{
 
 
 
-//Individual users
-/* app.param('id',function(req, res,next,id){
-    User.findById(id, function(err, users){
-        if(err) res.json(err);
-        else{
-            req.userId= users;
-            next();
-        }
-    });
-});
-app.get('/technician/:id',function(req, res){
-    res.render('technician',{User: users});
-}); */
+
 //edit user
 app.get('/edit',ensureAuthenticated, async(req, res)=>{
   try{

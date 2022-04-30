@@ -22,16 +22,18 @@ router.get('/addjob',(req,res)=> res.render('addjob'));
 //addjob Handle
 router.post('/addJob', (req,res)=>{
     console.log(req.body)
-    const {name,device,problem,location} = req.body; 
+    const {name,phone,deviceType,device,problem,location} = req.body; 
     let errors = [];
 
     //check reqruied fields 
-    if(!name || !device|| !problem || !location){
+    if(!name || !phone || !deviceType || !device|| !problem || !location){
         //console.log('Please fiill in the all fields.');
         errors.push({ msg: 'Please fill in the all fields'});
     }
     const newJob = new Job({
         name,
+        phone,
+        deviceType,
         device,
         problem,
         location
@@ -63,9 +65,9 @@ router.post('/register', (req,res)=>{
     }
 
     //password lenth required
-   /*  if(password.length < 3){
+    if(password.length < 3){
         errors.push({ msg: 'Password should be 3 characters.'});
-    } */
+    } 
     if(errors.length >0){
         res.render('register', {
             errors,

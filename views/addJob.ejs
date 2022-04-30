@@ -15,18 +15,42 @@
               value="<%= typeof name != 'undefined' ? name : '' %>"
             />
           </div>
+          <div class="form-group">
+            <label for="deviceType">Phone </label>
+            <input
+              type="phone"
+              id="phone"
+              name="phone"
+              class="form-control"
+              placeholder="Enter phone"
+              value="<%= typeof phone != 'undefined' ? phone : '' %>"
+            />
+          </div>
 
           <div class="form-group">
-            <label for="device">Device name </label>
+            <label for="deviceType">Device type </label>
+            <input
+              type="deviceType"
+              id="deviceType"
+              name="deviceType"
+              class="form-control"
+              placeholder="i.e. desktop, laptop, mobile, ac"
+              value="<%= typeof deviceType != 'undefined' ? deviceType : '' %>"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="device">Device Name</label>
             <input
               type="device"
               id="device"
               name="device"
               class="form-control"
-              placeholder="Enter Device Name"
+              placeholder="Enter device name"
               value="<%= typeof device != 'undefined' ? device : '' %>"
             />
           </div>
+          
 
           <div class="form-group">
             <label for="problem">Problem of the device </label>
