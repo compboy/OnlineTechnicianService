@@ -1,4 +1,4 @@
-const users = require('../routes/users')
+const users = require('../controller/users')
 const jobs = require('../views/allJob')
 const technicians = require('../views/alTechnician')
 import supertest from 'supertest'

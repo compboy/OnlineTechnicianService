@@ -8,7 +8,7 @@ const ejs = require('ejs');
 const passport = require('passport');
 const path = require('path');
 const jade = require('jade');
-const usersRoute = require('./routes/users.js');
+const usersRoute = require('./controller/users.js');
 
 //Fetch
 const User = require('./models/User');
@@ -65,8 +65,8 @@ app.use((req, res, next) => {
 
 
 //Route
-app.use('/', require('./routes/index.js'));
-app.use('/users', require('./routes/users.js'));
+app.use('/', require('./controller/index.js'));
+app.use('/users', require('./controller/users.js'));
 
 
 

@@ -1,4 +1,4 @@
-const users = require('../routes/users')
+const users = require('../controller/users')
 import supertest from 'supertest'
 const express = require('express')
 
