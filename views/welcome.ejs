@@ -1,37 +1,43 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  
+
   <title>Home page</title>
 </head>
+
 <body>
- <br> 
- <div class ="text-box">
-   <h1>Welcome to KAAJ.COM</h1>
-   <h3>First ever in Bangladsh</h3>
-   <h3> We are here for your problems and provide the
-    best and definitely economical technicia support. </h3>
- </div>
- <br>
+  <br>
+  <div class="text-box">
+    <h1>Welcome to KAAJ.COM</h1>
+    <h3>First ever in Bangladsh</h3>
+    <h3> We are here for your problems and provide the
+      best and definitely economical technicia support. </h3>
+  </div>
+  <br>
   <div class="text-job">
-      <h2>Available jobs</h2>
-        <% for(var i=jobList.length - 1; i >=7; i-- ){ %>
-          <h5> Name: <%= jobList[i].name %></h5>
-          <p> Phone: <%= jobList[i].phone %></p>
-          <p> Device Type: <%= jobList[i].deviceType %></>
-          <p>Device: <%= jobList[i].device %></p>
-          <p>Problem: <%= jobList[i].problem %></p>
-          <p>Location: <%= jobList[i].location %></p>
+    <h2>Available jobs</h2>
+    <% for(var i=jobList.length - 1; i>=7; i-- ){ %>
+      <h5> Name: <%= jobList[i].name %>
+      </h5>
+      <p> Phone: <%= jobList[i].phone %>
+      </p>
+      <p> Device Type: <%= jobList[i].deviceType %>
+          </>
+          <p>Device: <%= jobList[i].device %>
+          </p>
+          <p>Problem: <%= jobList[i].problem %>
+          </p>
+          <p>Location: <%= jobList[i].location %>
+          </p>
 
-            <br>
-          
+          <br>
+
           <% } %>
-        </div>
+  </div>
 </body>
+
 </html>
-
-
- 

@@ -1,54 +1,62 @@
-h1{
+h1 {
   color: aliceblue;
 }
-h2{
-color: rgb(255, 255, 255);
-text-transform: capitalize;
-text-align: left;
-top: 50%;
-font-size: 36px;
-line-height: 40px;
+
+h2 {
+  color: rgb(255, 255, 255);
+  text-transform: capitalize;
+  text-align: left;
+  top: 50%;
+  font-size: 36px;
+  line-height: 40px;
 }
-h5{
+
+h5 {
   color: rgb(255, 255, 255);
   font-weight: bold;
 }
-p{
+
+p {
   color: rgb(255, 255, 255);
   font-weight: bold;
 }
-h4{
+
+h4 {
   color: rgb(255, 255, 255);
 }
-body{
-  background-color: rgb(166, 190, 226); 
+
+body {
+  background-color: rgb(166, 190, 226);
   width: 100%;
   position: relative;
   background-image: url("/img/img3.jpg");
   background-size: cover;
 }
-.text-box{
+
+.text-box {
   color: rgb(199, 174, 174);
   width: 80%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50);
+  transform: translate(-50%, -50);
   text-align: center;
   display: inline-block;
-  
 
-} 
-.text-box h3{
+
+}
+
+.text-box h3 {
   color: rgb(255, 255, 255);
   text-align: center;
-  
 
-} 
 
-td{
+}
+
+td {
   color: rgb(255, 255, 255);
 }
-.navbar{
+
+.navbar {
   min-width: 100%;
   min-height: 80px;
 }
@@ -58,10 +66,11 @@ td{
   margin-top: 23px;
   padding: 9px 10px !important;
 }
+
 .navbar {
   background-color: transparent !important;
 }
 
-thead{
+thead {
   color: aliceblue;
 }

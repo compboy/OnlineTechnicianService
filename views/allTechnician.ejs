@@ -1,41 +1,56 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <br>
 
-    <table class="table technicianTable">
-        <thead class="thead">
-          <tr>
-            <th scope="col">Name</th>
-            <th scope="col">Email</th>
-            <th scope="col">Phone</th>
-            <th scope="col">Technician Type</th>
-            <th scope="col">Skill</th>
-            <th scope="col">qualification</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <% for(var i=0; i < technicianList.length; i++ ){ %>
-              <tr></tr>
-              <td> <%= technicianList[i].name %></td>
-              <td> <%= technicianList[i].email %></td>
-              <td> <%= technicianList[i].phone %></td>
-              <td> <%= technicianList[i].technicianType %></td>
-              <td> <%= technicianList[i].skill %></td>
-              <td> <%= technicianList[i].qualification %></td>
-            </tr>
-              <% } %>
-        
-        </tbody>
-      </table>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <br>
+
+  <table class="table technicianTable">
+    <thead class="thead">
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Technician Type</th>
+        <th scope="col">Skill</th>
+        <th scope="col">qualification</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <% for(var i=0; i < technicianList.length; i++ ){ %>
+      <tr></tr>
+      <td>
+        <%= technicianList[i].name %>
+      </td>
+      <td>
+        <%= technicianList[i].email %>
+      </td>
+      <td>
+        <%= technicianList[i].phone %>
+      </td>
+      <td>
+        <%= technicianList[i].technicianType %>
+      </td>
+      <td>
+        <%= technicianList[i].skill %>
+      </td>
+      <td>
+        <%= technicianList[i].qualification %>
+      </td>
+      </tr>
+      <% } %>
+
+    </tbody>
+  </table>
 
 
 </body>
+
 </html>

@@ -1,84 +1,50 @@
 <div class="row mt-5">
-    <div class="col-md-6 m-auto">
-      <div class="card card-body">
-        <h1 class="text-center mb-3"><i class="fas fa-user-plus"></i> Add job</h1>
-        <%- include('./partials/messages.ejs') %>
+  <div class="col-md-6 m-auto">
+    <div class="card card-body">
+      <h1 class="text-center mb-3"><i class="fas fa-user-plus"></i> Add job</h1>
+      <%- include('./partials/messages.ejs') %>
         <form action="/users/addJob" method="POST">
           <div class="form-group">
             <label for="name">Customer name</label>
-            <input
-              type="name"
-              id="name"
-              name="name"
-              class="form-control"
-              placeholder="Enter Name"
-              value="<%= typeof name != 'undefined' ? name : '' %>"
-            />
+            <input type="name" id="name" name="name" class="form-control" placeholder="Enter Name"
+              value="<%= typeof name != 'undefined' ? name : '' %>" />
           </div>
           <div class="form-group">
             <label for="deviceType">Phone </label>
-            <input
-              type="phone"
-              id="phone"
-              name="phone"
-              class="form-control"
-              placeholder="Enter phone"
-              value="<%= typeof phone != 'undefined' ? phone : '' %>"
-            />
+            <input type="phone" id="phone" name="phone" class="form-control" placeholder="Enter phone"
+              value="<%= typeof phone != 'undefined' ? phone : '' %>" />
           </div>
 
           <div class="form-group">
             <label for="deviceType">Device type </label>
-            <input
-              type="deviceType"
-              id="deviceType"
-              name="deviceType"
-              class="form-control"
+            <input type="deviceType" id="deviceType" name="deviceType" class="form-control"
               placeholder="i.e. desktop, laptop, mobile, ac"
-              value="<%= typeof deviceType != 'undefined' ? deviceType : '' %>"
-            />
+              value="<%= typeof deviceType != 'undefined' ? deviceType : '' %>" />
           </div>
 
           <div class="form-group">
             <label for="device">Device Name</label>
-            <input
-              type="device"
-              id="device"
-              name="device"
-              class="form-control"
-              placeholder="Enter device name"
-              value="<%= typeof device != 'undefined' ? device : '' %>"
-            />
+            <input type="device" id="device" name="device" class="form-control" placeholder="Enter device name"
+              value="<%= typeof device != 'undefined' ? device : '' %>" />
           </div>
-          
+
 
           <div class="form-group">
             <label for="problem">Problem of the device </label>
-            <input
-              type="problem"
-              id="problem"
-              name="problem"
-              class="form-control"
+            <input type="problem" id="problem" name="problem" class="form-control"
               placeholder="Provide device problems in details."
-              value="<%= typeof problem != 'undefined' ? problem : '' %>"
-          </div>
+              value="<%= typeof problem != 'undefined' ? problem : '' %>" </div>
 
-          <div class="form-group">
-            <label for="location">Service Location </label>
-            <input
-              type="location"
-              id="location"
-              name="location"
-              class="form-control"
-              placeholder="Location"
-              value="<%= typeof location != 'undefined' ? location : '' %>"
-            />
-          </div>
+            <div class="form-group">
+              <label for="location">Service Location </label>
+              <input type="location" id="location" name="location" class="form-control" placeholder="Location"
+                value="<%= typeof location != 'undefined' ? location : '' %>" />
+            </div>
 
-          <button type="submit" class="btn btn-primary btn-block">
-            Submit
-          </button>
+            <button type="submit" class="btn btn-primary btn-block">
+              Submit
+            </button>
         </form>
-      </div>
     </div>
   </div>
+</div>
