@@ -133,7 +133,6 @@ router.post('/login', (req, res, next) => {
         failureRedirect: '/users/login',
         failureFlash: true
     })(req, res, next);
-    res.sendStatus(200);
 });
 
 //Logout handle
