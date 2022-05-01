@@ -29,12 +29,6 @@ const UserSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    // user skills
-    /*expertize: {
-        type: String,
-        required: true */
-    /* }, */
-    //
     date: {
         type: Date,
         default: Date.now
