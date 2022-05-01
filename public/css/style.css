@@ -20,10 +20,6 @@ p{
 h4{
   color: rgb(255, 255, 255);
 }
-
-.job{
-background-color: rgb(190, 190, 190)
-}
 body{
   background-color: rgb(166, 190, 226); 
   width: 100%;
@@ -38,6 +34,7 @@ body{
   left: 50%;
   transform: translate(-50%,-50);
   text-align: center;
+  display: inline-block;
   
 
 } 
